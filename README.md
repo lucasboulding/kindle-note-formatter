@@ -2,10 +2,15 @@
 
 ## Preamble
 
-I recently discovered that using Kindle highlights saved me the trouble of typing out quotations from my reading. However, I rapidly got bored of having to take the supplied CSV, reformatting it for my notes and supplying the pandoc citation for each quotation. This solves this problem for me, but it is not elegant, nor does it handle for anything other than the intended use case. 
+I recently discovered that using Kindle highlights saved me the trouble of typing out quotations from my reading. However, I rapidly got bored of having to take the supplied CSV, reformatting it for my notes and supplying the pandoc citation for each quotation. This script solves this problem for me, but it is not elegant, nor does it handle for anything other than the intended use case. 
 
 
 This is a simple Python 3.8 script, with no additional testing. I created it on Ubuntu 16.04. It uses f-strings, which means it won't work as is for versions prior to 3.6.
+
+### Features to add
+
+- Add a quick input choice to add `loc.` to citation for books without page numbers. 
+
 
 ## Installation
 
@@ -25,7 +30,7 @@ Open the terminal at the program directory, and run `python3.8 quotation_reforma
 When prompted supply the details of the pandoc citation, without any of the `[@ ]`, i.e. `imai_gemba_2012`. 
 
 
-A confirmation message should be printed to the terminal for each quotation processed, and then the a final notification that the program is complete. In the output folder there should now be a file entitled `your_citation_2020.md` for whatever citation you provided, with the quotes, in pandoc indents, with quotation marks around them, and with the appropriate pandoc citation at the end of each one, ready to drop into your notes. 
+A confirmation message should be printed to the terminal for each quotation processed, and then the a final notification that the program is complete. In the output folder there should now be a file entitled `your_citation_2020.md` for whatever citation you provided. In my case, this would be `imai_gemba_2020.md` If you open the file, you should find each quotation in markdown indents, with quotation marks around them, and with the appropriate pandoc citation at the end of each one, ready to drop into your notes. 
 
 
 ## NB
